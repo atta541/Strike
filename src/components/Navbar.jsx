@@ -5,19 +5,19 @@ import { Search } from "lucide-react"; // ✅ Correct import
 function Navbar() {
     return (
         <nav className="bg-[#1F1F21] text-white h-16 flex items-center justify-between px-4 sm:px-8">
-            
+
             {/* Center Section - Navigation Links */}
             <div className="hidden sm:flex absolute left-1/2 transform -translate-x-1/2">
                 <ul className="flex gap-4 sm:gap-8 text-sm sm:text-lg font-medium">
                     <li className="cursor-pointer hover:text-gray-400">New</li>
-                    
+
                     <li className="cursor-pointer hover:text-gray-400">
                         <Link href="/men">Men</Link> {/* ✅ Fixed */}
                     </li>
 
-                    <li className="cursor-pointer hover:text-gray-400">Women</li>
-                    <li className="cursor-pointer hover:text-gray-400">Kids</li>
-                    <li className="cursor-pointer hover:text-gray-400">Jordan</li>
+                    <li className="cursor-pointer hover:text-gray-400"><Link href="/men">Women</Link></li>
+                    <li className="cursor-pointer hover:text-gray-400"><Link href="/men">Kids</Link></li>
+                    <li className="cursor-pointer hover:text-gray-400"><Link href="/men">Jordan</Link></li>
                 </ul>
             </div>
 
