@@ -39,7 +39,7 @@ export default function Home() {
 
 
       <h1 className="text-4xl font-bold mb-8 ml-12 mt-28 text-[#B4A596]">Foot Wear</h1>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-0">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-0 w-full">
         {[
           {
             name: "Simone Biles",
@@ -71,3 +71,5 @@ export default function Home() {
     </main>
   )
 }
+
+
