@@ -1,5 +1,6 @@
 import React from "react";
-import { Search } from "lucide-react"; // Importing Search Icon from Lucide
+import Link from "next/link"; // ✅ Correct import
+import { Search } from "lucide-react"; // ✅ Correct import
 
 function Navbar() {
     return (
@@ -9,7 +10,11 @@ function Navbar() {
             <div className="hidden sm:flex absolute left-1/2 transform -translate-x-1/2">
                 <ul className="flex gap-4 sm:gap-8 text-sm sm:text-lg font-medium">
                     <li className="cursor-pointer hover:text-gray-400">New</li>
-                    <li className="cursor-pointer hover:text-gray-400">Men</li>
+                    
+                    <li className="cursor-pointer hover:text-gray-400">
+                        <Link href="/men">Men</Link> {/* ✅ Fixed */}
+                    </li>
+
                     <li className="cursor-pointer hover:text-gray-400">Women</li>
                     <li className="cursor-pointer hover:text-gray-400">Kids</li>
                     <li className="cursor-pointer hover:text-gray-400">Jordan</li>

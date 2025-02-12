@@ -4,6 +4,9 @@ import "./globals.css";
 import Bar from "@/components/bar";
 import Navbar from "@/components/Navbar";
 import Banner from "@/components/banner"
+import Footer from "@/components/Footer"
+// import { Navigation } from "lucide-react";
+import  Navigation from "@/components/Navigation";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,8 +35,11 @@ export default function RootLayout({
         <Bar />
         <Navbar />
         <Banner/>
+        
 
         {children}
+        <Navigation />
+        <Footer />
       </body>
     </html>
   );

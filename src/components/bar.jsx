@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from "next/link"; // ✅ Correct import
 
 const Bar = () => {
     return (
@@ -6,7 +7,10 @@ const Bar = () => {
             {/* Left Section */}
             <div className="flex flex-row items-center gap-2 sm:gap-4">
                 <h1 className="text-xl sm:text-2xl lg:text-3xl font-extrabold italic tracking-wider text-[#ffffff]">
+                    
+                    <Link href={"/"}>
                     Strike
+                    </Link>
                 </h1>
             </div>
 
