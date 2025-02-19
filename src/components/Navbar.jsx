@@ -68,14 +68,14 @@ function Navbar() {
             <Link href="/men">Men</Link>
           </li>
           <li className="cursor-pointer hover:text-gray-400">
-            <Link href="/women">Women</Link>
+            <Link href="/men">Women</Link>
             
           </li>
           <li className="cursor-pointer hover:text-gray-400">
-            <Link href="/kids">Kids</Link>
+            <Link href="/men">Kids</Link>
           </li>
           <li className="cursor-pointer hover:text-gray-400">
-            <Link href="/jordan">Jordan</Link>
+            <Link href="/men">Jordan</Link>
           </li>
         </ul>
       </div>
